@@ -1,0 +1,54 @@
+//
+//  PchFile.pch
+//  CustomNav
+//
+//  Created by 杨宗磊 on 15/8/19.
+//  Copyright (c) 2015年 laoshilaile. All rights reserved.
+//
+
+#ifndef CustomNav_PchFile_pch
+#define CustomNav_PchFile_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif
+///Users/laoshilaile/Desktop/Demo/CustomNav/CustomNav/PchFile.pch
+
+#define VIEW_CONTROLLER_BG_COLOR [UIColor colorWithRed:242.0/255.0 green:247.0/255.0 blue:249.0/255.0 alpha:1.0]
+#define RGB(r, g, b)        [UIColor colorWithRed:(r / 255.0f) green:(g / 255.0f) blue:(b / 255.0f) alpha:1.0f]
+
+
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+
+
+#define OffsetHeight ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? 20 : 0)
+
+#define isIOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? YES : NO)
+
+
+
+
+#define MainWindow [UIApplication sharedApplication].delegate.window
+
+
+#define TITLE_FONT @"Helvetica"
+#define FONT_BOLD @"Helvetica-Bold"
+
+
+#define MYBUNDLE_NAME @ "image.bundle"
+#define MYBUNDLE_PATH [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent: MYBUNDLE_NAME]
+#define MYBUNDLE [NSBundle bundleWithPath: MYBUNDLE_PATH]
+
+
+
+
+
+
+#import "CustomNavigationController.h"
+#import "Utils.h"
+#import "iToast.h"
+#import "ToolKit.h"
+#import "PublicImageDefine.h"
+#import "IQKeyboardManager.h"
